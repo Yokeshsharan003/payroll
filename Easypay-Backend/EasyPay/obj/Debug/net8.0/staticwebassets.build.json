@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rgV5I3QGb5mKFWd1HUUA3+W2zRpVKpczqvKa1mEeNK0=",
+  "Source": "EasyPay",
+  "BasePath": "_content/EasyPay",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

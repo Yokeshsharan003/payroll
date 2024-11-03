@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|d:\\d folder\\payroll_backend\\payroll_sat28\\easypay-newbackend\\easypay-newbackend\\easypay-newbackend_test\\easypay-newbackend\\easypay-new\\easypay\\easypay\\controllers\\compliancereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|solutionrelative:easypay\\controllers\\compliancereportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|d:\\d folder\\payroll_backend\\payroll_sat28\\easypay-newbackend\\easypay-newbackend\\easypay-newbackend_test\\easypay-newbackend\\easypay-new\\easypay\\easypay\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|solutionrelative:easypay\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|d:\\d folder\\payroll_backend\\payroll_sat28\\easypay-newbackend\\easypay-newbackend\\easypay-newbackend_test\\easypay-newbackend\\easypay-new\\easypay\\easypay\\models\\payrollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|solutionrelative:easypay\\models\\payrollcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|d:\\d folder\\payroll_backend\\payroll_sat28\\easypay-newbackend\\easypay-newbackend\\easypay-newbackend_test\\easypay-newbackend\\easypay-new\\easypay\\easypay\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|solutionrelative:easypay\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|d:\\d folder\\payroll_backend\\payroll_sat28\\easypay-newbackend\\easypay-newbackend\\easypay-newbackend_test\\easypay-newbackend\\easypay-new\\easypay\\easypay\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DDB93F2-C485-4FF9-BF37-9D5A9056F7B3}|EasyPay\\EasyPay.csproj|solutionrelative:easypay\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComplianceReportsController.cs",
+              "DocumentMoniker": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Controllers\\ComplianceReportsController.cs",
+              "RelativeDocumentMoniker": "EasyPay\\Controllers\\ComplianceReportsController.cs",
+              "ToolTip": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Controllers\\ComplianceReportsController.cs",
+              "RelativeToolTip": "EasyPay\\Controllers\\ComplianceReportsController.cs",
+              "ViewState": "AgIAADMAAABgZmZmZmYwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T12:10:13.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PayrollContext.cs",
+              "DocumentMoniker": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\PayrollContext.cs",
+              "RelativeDocumentMoniker": "EasyPay\\Models\\PayrollContext.cs",
+              "ToolTip": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\PayrollContext.cs",
+              "RelativeToolTip": "EasyPay\\Models\\PayrollContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwHMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:37:32.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EasyPay\\Models\\Employee.cs",
+              "ToolTip": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\Employee.cs",
+              "RelativeToolTip": "EasyPay\\Models\\Employee.cs",
+              "ViewState": "AgIAACIAAAAAZmZmZmb2vwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:34:37.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\Grade.cs",
+              "RelativeDocumentMoniker": "EasyPay\\Models\\Grade.cs",
+              "ToolTip": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Models\\Grade.cs",
+              "RelativeToolTip": "EasyPay\\Models\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:26:30.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EasyPay\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\D Folder\\Payroll_backend\\Payroll_SAt28\\Easypay-newbackend\\Easypay-newbackend\\Easypay-newbackend_test\\Easypay-newbackend\\Easypay-new\\Easypay\\EasyPay\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EasyPay\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T06:33:31.252Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

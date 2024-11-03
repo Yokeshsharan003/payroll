@@ -1,0 +1,63 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left:25%
+  }
+  
+  
+  .grid-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  
+  .btn-disabled {
+    background-color: #ccc;
+    color: #666;
+  }
+  
+  
+  .action-section h2, .form-section h2 {
+    margin-bottom: 10px;
+  }
+  
