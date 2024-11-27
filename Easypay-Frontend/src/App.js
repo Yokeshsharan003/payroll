@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 import Login from './Pages/Login';
 import LandingPage from './Pages/LandingPage';
@@ -22,233 +22,164 @@ import EmailVerification from './Pages/EmailVerification';
 import CodeCheck from './Pages/CodeCheck';
 import ChangePassword from './Pages/ChangePassword';
 
-
-
-
-function App() {
+const App = () => {
   return (
     <Router>
-          <Routes>
-            {/* Public Routes */}
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/EmailVerification" element={<EmailVerification/>}/>
-            <Route path="/codecheck" element={<CodeCheck/>}/>
-            <Route path="/changePassword" element={<ChangePassword/>}/>
+      <ClearLocalStorageOnBack />
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/EmailVerification" element={<EmailVerification />} />
+        <Route path="/codecheck" element={<CodeCheck />} />
+        <Route path="/changePassword" element={<ChangePassword />} />
 
-            {/* Admin Routes - Only accessible to Admin */}
-            <Route
-              path="/admin"
-              element={
-                <ProtectedRoute role="Admin">
-                  <Admin />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <ProtectedRoute role="Admin">
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="Profile"
-              element={
-                <ProtectedRoute role="Admin">
-                  <Profile />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/manage-user"
-              element={
-                <ProtectedRoute role="Admin">
-                  <ManageUser />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/payroll-policies"
-              element={
-                <ProtectedRoute role="Admin">
-                  <PayrollPolicies />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/compliance-reports"
-              element={
-                <ProtectedRoute role="Admin">
-                  <ComplianceReports />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/manage-employee"
-              element={
-                <ProtectedRoute role="Admin">
-                  <ManageEmployee />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/ViewPaystubs"
-              element={
-                <ProtectedRoute role="Admin">
-                  <ViewPaystubs />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/RequestLeave"
-              element={
-                <ProtectedRoute role="Admin">
-                  <RequestLeave />
-                </ProtectedRoute>
-              }
-            />
+        {/* Admin Routes */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute role="Admin">
+              <Admin />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/manage-user"
+          element={
+            <ProtectedRoute role="Admin">
+              <ManageUser />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/payroll-policies"
+          element={
+            <ProtectedRoute role="Admin">
+              <PayrollPolicies />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/compliance-reports"
+          element={
+            <ProtectedRoute role="Admin">
+              <ComplianceReports />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/manage-employee"
+          element={
+            <ProtectedRoute role="Admin">
+              <ManageEmployee />
+            </ProtectedRoute>
+          }
+        />
 
-            {/* Employee Routes - Only accessible to Employee */}
-            <Route
-              path="/employee"
-              element={
-                <ProtectedRoute role="Employee">
-                  <Employee />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <ProtectedRoute role="Employee">
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/profile"
-              element={
-                <ProtectedRoute role="Employee">
-                  <Profile />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/request-leave"
-              element={
-                <ProtectedRoute role="Employee">
-                  <RequestLeave />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/view-paystubs"
-              element={
-                <ProtectedRoute role="Employee">
-                  <ViewPaystubs />
-                </ProtectedRoute>
-              }
-            />
+        {/* Employee Routes */}
+        <Route
+          path="/employee"
+          element={
+            <ProtectedRoute role="Employee">
+              <Employee />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute role="Employee">
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute role="Employee">
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/request-leave"
+          element={
+            <ProtectedRoute role="Employee">
+              <RequestLeave />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/view-paystubs"
+          element={
+            <ProtectedRoute role="Employee">
+              <ViewPaystubs />
+            </ProtectedRoute>
+          }
+        />
 
-            {/* Processor Routes - Only accessible to Payroll Processor */}
-            <Route
-              path="/processor"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <Processor />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/calculate-payroll"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <CalculatePayroll />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/manage-benefits"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <ManageBenefits />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/ViewPaystubs"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <ViewPaystubs />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/RequestLeave"
-              element={
-                <ProtectedRoute role="PayrollProcessor">
-                  <RequestLeave />
-                </ProtectedRoute>
-              }
-            />
+        {/* Processor Routes */}
+        <Route
+          path="/processor"
+          element={
+            <ProtectedRoute role="PayrollProcessor">
+              <Processor />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/calculate-payroll"
+          element={
+            <ProtectedRoute role="PayrollProcessor">
+              <CalculatePayroll />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/manage-benefits"
+          element={
+            <ProtectedRoute role="PayrollProcessor">
+              <ManageBenefits />
+            </ProtectedRoute>
+          }
+        />
 
-            {/* Manager Routes - Only accessible to Manager */}
-            <Route
-              path="/manager"
-              element={
-                <ProtectedRoute role="Manager">
-                  <Manager />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <ProtectedRoute role="Manager">
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="Profile"
-              element={
-                <ProtectedRoute role="Manager">
-                  <Profile />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/manager-leave"
-              element={
-                <ProtectedRoute role="Manager">
-                  <LeaveRequest />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/ViewPaystubs"
-              element={
-                <ProtectedRoute role="Manager">
-                  <ViewPaystubs />
-                </ProtectedRoute>
-              }
-            />
-            
-            {/* Redirect any unknown route to the landing page */}
-            <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
+        {/* Manager Routes */}
+        <Route
+          path="/manager"
+          element={
+            <ProtectedRoute role="Manager">
+              <Manager />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/manager-leave"
+          element={
+            <ProtectedRoute role="Manager">
+              <LeaveRequest />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Redirect unknown routes to landing page */}
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </Router>
   );
-}
+};
+
+const ClearLocalStorageOnBack = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      localStorage.clear();
+      console.log("Local storage cleared because you're on the login page.");
+    }
+  }, [location]);
+
+  return null; // This component does not render anything
+};
 
 export default App;
